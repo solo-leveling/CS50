@@ -1,8 +1,5 @@
-var fizzBuzzCustom = function(stringOne, stringTwo, numOne, numTwo) {
-  stringOne = (stringOne == undefined) ? "Fizz" : stringOne;
-  stringTwo = (stringTwo == undefined) ? "Buzz" : stringTwo;
-  numOne = (numOne == undefined) ? 3 : numOne;
-  numTwo = (numTwo == undefined) ? 5 : numTwo;
+var fizzBuzzCustom = function(stringOne = "Fizz", stringTwo = "Buzz", numOne = 3, numTwo = 5) {
+
    var arr = [];
    for(let i = 1; i<=100; i++){
       if(i%numOne === 0 && i%numTwo === 0){
@@ -17,6 +14,7 @@ var fizzBuzzCustom = function(stringOne, stringTwo, numOne, numTwo) {
       }
    }
    console.log(arr);
+   
 };
 
-fizzBuzzCustom();
+fizzBuzzCustom("Hein", "Htet", 4, 5);
