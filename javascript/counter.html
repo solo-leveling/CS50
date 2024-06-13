@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Counter</title>
+        <script>
+
+            let counter = 0;
+
+            function count(){
+                document.querySelector('h1').innerHTML = ++counter;
+                if(counter == 10){
+                    alert(`you just clicked ${counter} times`)
+                }
+            }
+
+            document.addEventListener("DOMContentLoaded", ()=>{
+                document.querySelector('button').onclick = count;
+            })
+
+        </script>
+    </head>
+    <body>
+        <h1>0</h1>
+        <button>Count</button>
+    </body>
+</html>
