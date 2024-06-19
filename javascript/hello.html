@@ -2,21 +2,21 @@
 <html>
     <head>
         <title>Hello</title>
-        <script>
-
-            function hello(){
-                const heading = document.querySelector('h1');
-                if(heading.innerHTML !== "Hello"){
-                    heading.innerHTML = "Hello";
-                }else{
-                    heading.innerHTML = "Goodbye";
-                }
-            }
-
+        <script src="hello.js">
         </script>
     </head>
     <body>
         <h1>Hello</h1>
-        <button onclick="hello()">Click me</button>
+        <ul id="tasks">
+
+        </ul>
+        <!-- <button onclick="hello()">Click me</button> -->
+
+        <form action="">
+            <input type="text" class="name">
+            <input type="submit" name="" id="submit">
+        </form>
+
+
     </body>
 </html>
